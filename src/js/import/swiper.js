@@ -1,4 +1,4 @@
-// import Swiper from 'swiper';
+import Swiper from 'swiper';
 
 
 // //home
@@ -20,3 +20,26 @@
 //     }
 //   }
 // });
+
+var swiper2 = new Swiper('.swiper-animated', {
+  slidesPerView: 'auto',
+  spaceBetween: 3,
+  loop: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false
+  }
+});
+if($('.swiper-animated').length) {
+  swiper2.update();
+}
+
+
+var swiper2 = new Swiper('.swiper-reviews', {
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  }
+});

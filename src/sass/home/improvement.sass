@@ -1,0 +1,55 @@
+.improvement
+  background-image: url('../img/grey-bg.png')
+  background-size: contain
+  background-position: 0 200px
+  background-repeat: no-repeat
+  &__title
+    +center-column
+    padding-bottom: 60px
+    h2
+      font-size: 60px
+      font-weight: bold
+      color: $dark-two
+      margin-bottom: 15px
+    p
+      font-size: 20px
+      line-height: 1.25
+      text-align: center
+      color: $dark-two
+  &__block
+    padding: 180px 150px
+    position: relative
+    &-1
+      .improvement__block__img
+        left: -150px
+        top: 30px
+      .improvement__block__parallax
+        top: -20px
+    &-2
+      .improvement__block__img
+        left: -80px
+      .improvement__block__parallax
+        left: 0
+    &__parallax
+      position: absolute
+      top: -120px
+      right: -20px
+      font-size: 250px
+      font-weight: bold
+      color: rgba(19, 28, 46, 0.05)
+    &__text
+      h3
+        font-size: 60px
+        font-weight: normal
+        color: $dark-two
+        margin-bottom: 30px
+      p
+        font-size: 18px
+        font-weight: normal
+        line-height: 1.67
+        color: $brownish-grey-two
+        max-width: 415px
+    &__img
+      position: relative
+      img
+        width: calc(100% + 50px)

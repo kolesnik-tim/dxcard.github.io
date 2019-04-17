@@ -12,3 +12,10 @@ import '../lib/selectize.min.js';
 //   });
 //   return false;
 // });
+
+import skrollr from '../lib/skrollr.js';
+$(document).ready(function() {
+  var s = skrollr.init({
+    smoothScrolling: true,
+  });
+});

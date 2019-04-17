@@ -9,7 +9,12 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
+$icon-android: "\EA01";
+$icon-apple: "\EA02";
+$icon-arrow-right: "\EA03";
+$icon-check: "\EA04";
+$icon-double-arrows: "\EA05";
+$icon-star: "\EA06";
 
 
 %icon {
@@ -28,4 +33,9 @@ $icon-facebook: "\EA01";
   display: inline-block;
 }
 
-.icon-facebook:before { content: $icon-facebook; }
+.icon-android:before { content: $icon-android; }
+.icon-apple:before { content: $icon-apple; }
+.icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-check:before { content: $icon-check; }
+.icon-double-arrows:before { content: $icon-double-arrows; }
+.icon-star:before { content: $icon-star; }

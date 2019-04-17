@@ -1,0 +1,59 @@
+.baner
+  background-image: url('../img/dx-card.png')
+  background-size: 1456px 325px
+  background-repeat: no-repeat
+  background-position: 50% 50%
+  height: 480px
+  background-color: #ececee
+  overflow: hidden
+  &__content
+    width: 1456px
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+  &__block
+    width: 260px
+    position: absolute
+    right: 320px
+    top: 90px
+    strong
+      font-size: 16px
+      font-weight: bold
+      color: $dark-two
+      margin-bottom: 10px
+    p
+      font-size: 50px
+      font-weight: bold
+      color: $dark-two
+      position: relative
+      padding-bottom: 20px
+      margin-bottom: 30px
+      &:before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 2px
+        width: 64px
+        height: 1px
+        opacity: 0.4
+        background-color: $dark-two
+      span
+        color: #ff0057
+    b
+      font-size: 18px
+      font-weight: bold
+      color: $dark-two
+      margin-bottom: 20px
+      display: block
+    &__app
+      display: flex
+      align-items: center
+      a
+        font-size: 14px
+        font-weight: bold
+        color: #ff0057
+        +center
+        margin-right: 20px
+        i
+          font-size: 38px
+          margin-right: 10px
