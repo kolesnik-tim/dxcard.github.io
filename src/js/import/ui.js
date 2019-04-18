@@ -1,5 +1,5 @@
 import '../lib/selectize.min.js';
-import Parallax from 'parallax-js';
+import AOS from 'aos';
 // import '../lib/maskedinput.js';
 // import modal from 'jquery-modal';
 
@@ -14,22 +14,29 @@ import Parallax from 'parallax-js';
 //   return false;
 // });
 
-import skrollr from '../lib/skrollr.js';
-$(document).ready(function() {
-  var s = skrollr.init({
-    smoothScrolling: true,
-  });
+// import skrollr from '../lib/skrollr.js';
+// $(document).ready(function() {
+//   var s = skrollr.init({
+//     smoothScrolling: true,
+//   });
+// });
+
+
+//footer
+$('.footer__nav__block h3').on('click', function() {
+  if($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(this).next('ul').slideUp();
+  } else{
+    $('.footer__nav__block h3').removeClass('active').next('ul').slideUp();
+    $(this).addClass('active');
+    $(this).next('ul').slideDown();
+  }
 });
 
+//animate
 
-
-var improvement__parallax_1 = document.getElementById('improvement__parallax-1');
-var parallaxInstance = new Parallax(improvement__parallax_1);
-
-
-var improvement__parallax_2 = document.getElementById('improvement__parallax-2');
-var parallaxInstance = new Parallax(improvement__parallax_2);
-
-
-var improvement__parallax_3 = document.getElementById('improvement__parallax-3');
-var parallaxInstance = new Parallax(improvement__parallax_3);
+AOS.init({
+  duration: 1500,
+  offset: 200,
+});

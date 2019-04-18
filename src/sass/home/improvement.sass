@@ -1,6 +1,6 @@
 .improvement
   background-image: url('../img/grey-bg.png')
-  background-size: contain
+  background-size: cover
   background-position: 0 200px
   background-repeat: no-repeat
   overflow: hidden
@@ -12,6 +12,9 @@
       font-weight: bold
       color: $dark-two
       margin-bottom: 15px
+      +r(767)
+        font-size: 40px
+        text-align: center
     p
       font-size: 20px
       line-height: 1.25
@@ -20,15 +23,23 @@
   &__block
     padding: 180px 150px
     position: relative
+    +r(1200)
+      padding: 180px 0
+    +r(767)
+      padding: 100px 0
     &-1
       .improvement__block__img
         left: -150px
         top: 30px
+        +r(1040)
+          left: 0px
       .improvement__block__parallax
         top: -20px
     &-2
       .improvement__block__img
         left: -80px
+        +r(767)
+          left: 0
       .improvement__block__parallax
         left: 0
     &__parallax
@@ -38,12 +49,25 @@
       font-size: 250px
       font-weight: bold
       color: rgba(19, 28, 46, 0.05)
+      +r(1040)
+        font-size: 170px
+        right: 0
+      +r(767)
+        font-size: 100px
+        top: -50px
+      +r(500)
+        font-size: 60px
+        top: -30px
     &__text
       h3
         font-size: 60px
         font-weight: normal
         color: $dark-two
         margin-bottom: 30px
+        +r(1040)
+          font-size: 50px
+        +r(767)
+          font-size: 40px
       p
         font-size: 18px
         font-weight: normal
@@ -52,5 +76,18 @@
         max-width: 415px
     &__img
       position: relative
+      +r(767)
+        +center
+        padding-top: 30px
       img
         width: calc(100% + 50px)
+        +r(767)
+          width: 80%
+[data-aos=fade-right]
+  transform: translate3d(-300px,0,0)
+  +r(767)
+    transform: translate3d(-100px,0,0)
+[data-aos=fade-left]
+  transform: translate3d(300px,0,0)
+  +r(767)
+    transform: translate3d(100px,0,0)
