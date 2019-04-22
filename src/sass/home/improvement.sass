@@ -7,26 +7,30 @@
   &__title
     +center-column
     padding-bottom: 60px
+    +r(767)
+      padding-bottom: 0
     h2
       font-size: 60px
       font-weight: bold
       color: $dark-two
       margin-bottom: 15px
       +r(767)
-        font-size: 40px
+        font-size: 35px
         text-align: center
     p
       font-size: 20px
       line-height: 1.25
       text-align: center
       color: $dark-two
+      +r(767)
+        font-size: 16px
   &__block
     padding: 180px 150px
     position: relative
     +r(1200)
       padding: 180px 0
     +r(767)
-      padding: 100px 0
+      padding: 50px 0
     &-1
       .improvement__block__img
         left: -150px
@@ -67,18 +71,25 @@
         +r(1040)
           font-size: 50px
         +r(767)
-          font-size: 40px
+          font-size: 32px
+          text-align: center
       p
         font-size: 18px
         font-weight: normal
         line-height: 1.67
         color: $brownish-grey-two
         max-width: 415px
+        +r(767)
+          font-size: 16px
+          text-align: center
+          position: relative
+          left: 50%
+          transform: translate(-50%)
     &__img
       position: relative
       +r(767)
         +center
-        padding-top: 30px
+        padding-top: 10px
       img
         width: calc(100% + 50px)
         +r(767)
