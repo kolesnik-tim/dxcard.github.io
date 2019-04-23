@@ -23,7 +23,7 @@ import Swiper from 'swiper';
 
 var swiper2 = new Swiper('.swiper-animated', {
   slidesPerView: 'auto',
-  spaceBetween: 3,
+  // spaceBetween: 3,
   loop: true,
   autoplay: {
     delay: 1000,

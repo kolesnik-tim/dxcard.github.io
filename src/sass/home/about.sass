@@ -10,8 +10,8 @@
     position: relative
     width: 100%
     left: 20px
-    +r(1100)
-      display: none
+    // +r(1100)
+    //   display: none
     img
       // position: absolute
       // left: 37%
@@ -26,6 +26,11 @@
       left: 37%
       top: 50%
       margin-left: 20px
+      +r(1150)
+        width: 70px
+        margin-left: 0
+      +r(870)
+        display: none
       span
         font-size: 10px
         font-weight: 900
@@ -39,6 +44,7 @@
     left: 50%
     transform: translate(-50%)
     +center
+    background: $white
     margin-top: 100px
     +r(480)
       height: 600px
@@ -46,21 +52,22 @@
       content: ''
       width: 100%
       background: $white
-      height: 17px
+      height: 20px
       position: absolute
-      top: 0
+      top: 0px
       left: 0
       z-index: 19
     img.phone
       width: 100%
       position: absolute
-      top: 0
+      top: -22px
       left: 20px
       z-index: 20
       +r(480)
         width: 70%
         left: 50%
         transform: translate(-50%)
+        top: 0px
     &-img
       margin: 0 20px
       width: calc(100% - 40px)
@@ -74,18 +81,26 @@
       height: 100%
       position: relative
       z-index: 18
-      background: $white
-      background: url('../img/home/iphone-dc@3x.png')
-      background-size: 250px 547px
-      background-repeat: no-repeat
-      background-position: 50% 40%
+      // background: $white
+      // background: url('../img/home/iphone-dc@3x.png')
+      // background-size: 250px 547px
+      // background-repeat: no-repeat
+      // background-position: 50% 40%
       &-container
-        width: calc(100% - 40px)
-        padding: 22px 13px 0
+        width: 300px
         height: 100%
+        margin: 0
+        margin-left: 60px
+        +r(480)
+          width: 40%
+          margin-left: 21%
       &-slide
         +center
+        align-items: flex-start
         opacity: 0.4
+        padding-top: 20%
+        +r(480)
+          padding-top: 32%
         img
           width: 100%
         &-active
@@ -93,6 +108,7 @@
   &__text
     height: 100%
     +center-y
+    position: relative
     p
       font-size: 30px
       font-weight: normal
