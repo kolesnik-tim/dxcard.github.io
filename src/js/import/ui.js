@@ -14,6 +14,10 @@ import AOS from 'aos';
 //   return false;
 // });
 
+
+
+
+
 import skrollr from '../lib/skrollr.js';
 $(document).ready(function() {
   var s = skrollr.init({
