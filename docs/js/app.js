@@ -152,7 +152,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dom7
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n__webpack_require__(/*! ./import/ui */ \"./import/ui.js\");\n\n__webpack_require__(/*! ./import/swiper */ \"./import/swiper.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9pbXBvcnQvdWknO1xuaW1wb3J0ICcuL2ltcG9ydC9zd2lwZXInO1xuLy8gaW1wb3J0IG9iamVjdEZpdEltYWdlcyBmcm9tICdvYmplY3QtZml0LWltYWdlcyc7XG5cblxuXG5cbi8vIG9iamVjdEZpdEltYWdlcygpO1xuXG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app.js\n");
+eval("\n\n__webpack_require__(/*! ./import/ui */ \"./import/ui.js\");\n\n__webpack_require__(/*! ./import/swiper */ \"./import/swiper.js\");\n\n__webpack_require__(/*! ./import/header */ \"./import/header.js\");\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAuanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vc3JjL2pzL2FwcC5qcz8wMzU0Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAnLi9pbXBvcnQvdWknO1xuaW1wb3J0ICcuL2ltcG9ydC9zd2lwZXInO1xuaW1wb3J0ICcuL2ltcG9ydC9oZWFkZXInO1xuLy8gaW1wb3J0IG9iamVjdEZpdEltYWdlcyBmcm9tICdvYmplY3QtZml0LWltYWdlcyc7XG5cblxuXG5cbi8vIG9iamVjdEZpdEltYWdlcygpO1xuXG4iXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQTtBQUFBO0FBQ0E7QUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./app.js\n");
+
+/***/ }),
+
+/***/ "./import/header.js":
+/*!**************************!*\
+  !*** ./import/header.js ***!
+  \**************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function($) {\n\n//header fixed\nvar mywindow = $(window);\nvar mypos = mywindow.scrollTop();\nvar up = false;\nvar newscroll;\nmywindow.scroll(function () {\n  if (mywindow.scrollTop() > 50) {\n    $('.header').addClass('active');\n    newscroll = mywindow.scrollTop();\n    if (newscroll > mypos && !up) {\n      $('.header').stop().removeClass('scroll');\n      $('.slider__header').css({ 'top': 0 });\n      up = !up;\n    } else if (newscroll < mypos && up) {\n      $('.header').stop().addClass('scroll');\n      $('.slider__header').css({ 'top': $('.header').innerHeight() });\n      up = !up;\n    }\n    mypos = newscroll;\n  } else {\n    $('.header').removeClass('active');\n  }\n});\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ \"../../node_modules/jquery/dist/jquery.js\")))\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9pbXBvcnQvaGVhZGVyLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL3NyYy9qcy9pbXBvcnQvaGVhZGVyLmpzPzdhNDIiXSwic291cmNlc0NvbnRlbnQiOlsiLy9oZWFkZXIgZml4ZWRcbnZhciBteXdpbmRvdyA9ICQod2luZG93KTtcbnZhciBteXBvcyA9IG15d2luZG93LnNjcm9sbFRvcCgpO1xudmFyIHVwID0gZmFsc2U7XG52YXIgbmV3c2Nyb2xsO1xubXl3aW5kb3cuc2Nyb2xsKGZ1bmN0aW9uKCkge1xuICBpZihteXdpbmRvdy5zY3JvbGxUb3AoKSA+IDUwKSB7XG4gICAgJCgnLmhlYWRlcicpLmFkZENsYXNzKCdhY3RpdmUnKTtcbiAgICBuZXdzY3JvbGwgPSBteXdpbmRvdy5zY3JvbGxUb3AoKTtcbiAgICBpZiAobmV3c2Nyb2xsID4gbXlwb3MgJiYgIXVwKSB7XG4gICAgICAkKCcuaGVhZGVyJykuc3RvcCgpLnJlbW92ZUNsYXNzKCdzY3JvbGwnKTtcbiAgICAgICQoJy5zbGlkZXJfX2hlYWRlcicpLmNzcyh7J3RvcCc6IDB9KTtcbiAgICAgIHVwID0gIXVwO1xuICAgIH0gZWxzZSBpZihuZXdzY3JvbGwgPCBteXBvcyAmJiB1cCkge1xuICAgICAgJCgnLmhlYWRlcicpLnN0b3AoKS5hZGRDbGFzcygnc2Nyb2xsJyk7XG4gICAgICAkKCcuc2xpZGVyX19oZWFkZXInKS5jc3Moeyd0b3AnOiAkKCcuaGVhZGVyJykuaW5uZXJIZWlnaHQoKX0pO1xuICAgICAgdXAgPSAhdXA7XG4gICAgfVxuICAgIG15cG9zID0gbmV3c2Nyb2xsO1xuICB9IGVsc2Uge1xuICAgICQoJy5oZWFkZXInKS5yZW1vdmVDbGFzcygnYWN0aXZlJyk7XG4gIH1cbn0pO1xuIl0sIm1hcHBpbmdzIjoiOztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./import/header.js\n");
 
 /***/ }),
 
