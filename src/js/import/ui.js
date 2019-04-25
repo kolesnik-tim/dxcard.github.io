@@ -1,5 +1,6 @@
 import '../lib/selectize.min.js';
 import AOS from 'aos';
+import skrollr from '../lib/skrollr.js';
 // import '../lib/maskedinput.js';
 // import modal from 'jquery-modal';
 
@@ -16,14 +17,13 @@ import AOS from 'aos';
 
 
 
-
-
-import skrollr from '../lib/skrollr.js';
-$(document).ready(function() {
-  var s = skrollr.init({
-    smoothScrolling: true,
+if($(document).width() > 1040) {
+  $(document).ready(function() {
+    var s = skrollr.init({
+      smoothScrolling: true,
+    });
   });
-});
+}
 
 
 //footer
