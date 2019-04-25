@@ -17,7 +17,7 @@ import skrollr from '../lib/skrollr.js';
 
 
 
-if($(document).width() > 1040) {
+if($(document).width() > 767) {
   $(document).ready(function() {
     var s = skrollr.init({
       smoothScrolling: true,
