@@ -39,6 +39,7 @@ var swiper2 = new Swiper('.swiper-reviews', {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
+  autoHeight: true,
   autoplay: {
     delay: 3000,
   }
