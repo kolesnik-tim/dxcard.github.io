@@ -12,17 +12,22 @@
     padding: 10px 0
     background: $white
     box-shadow: 5px 5px 15px 0 rgba(31, 31, 31, 0.07)
+    .btn
+      left: 100%
+      transform: translate(-100%)
   &.scroll
     top: 0
   +r(767)
     top: 0
     padding: 15px 0
   &__btn
-    display: flex
-    justify-content: flex-end
     .btn
       text-transform: uppercase
       padding-top: 13px
+      position: relative
+      left: 0%
+      transform: translate(0%)
+      transition: all 0.6s
   &__logo
     +r(767)
       position: relative
