@@ -14,11 +14,13 @@ $icon-apple: "\EA02";
 $icon-arrow-down: "\EA03";
 $icon-arrow-right-circle: "\EA04";
 $icon-arrow-right: "\EA05";
-$icon-check: "\EA06";
-$icon-double-arrows: "\EA07";
-$icon-left-chevron: "\EA08";
-$icon-right-chevron: "\EA09";
-$icon-star: "\EA0A";
+$icon-arrow_left-cicle: "\EA06";
+$icon-arrow_right-circle: "\EA07";
+$icon-check: "\EA08";
+$icon-double-arrows: "\EA09";
+$icon-left-chevron: "\EA0A";
+$icon-right-chevron: "\EA0B";
+$icon-star: "\EA0C";
 
 
 %icon {
@@ -42,6 +44,8 @@ $icon-star: "\EA0A";
 .icon-arrow-down:before { content: $icon-arrow-down; }
 .icon-arrow-right-circle:before { content: $icon-arrow-right-circle; }
 .icon-arrow-right:before { content: $icon-arrow-right; }
+.icon-arrow_left-cicle:before { content: $icon-arrow_left-cicle; }
+.icon-arrow_right-circle:before { content: $icon-arrow_right-circle; }
 .icon-check:before { content: $icon-check; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
 .icon-left-chevron:before { content: $icon-left-chevron; }
