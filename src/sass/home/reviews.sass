@@ -37,6 +37,12 @@
           color: #ff0057
   &__content
     position: relative
+    .container
+      height: 100%
+    .swiper-container
+      height: 720px
+      +r(767)
+        height: auto
     .swiper-slide
       +cover
       +r(767)
@@ -78,26 +84,34 @@
       background: $white
       &-active
         opacity: 1
+  &__block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 100%
+    +r(1400)
+      padding-left: 60px
+    +r(1040)
+      padding-left: 40px
+    +r(767)
+      padding-left: 0
   h3
     font-size: 18px
     font-weight: bold
     color: #fdfdfd
-    margin-top: 70px
-    +r(1400)
-      padding-left: 60px
-    +r(1040)
-      padding-left: 40px
+    padding-top: 70px
     +r(767)
-      padding-left: 0
-  &__block
-    padding-top: 80px
-    +r(1400)
-      padding-left: 60px
-    +r(1040)
-      padding-left: 40px
-    +r(767)
-      padding-top: 60px
-      padding-left: 0
+      padding-top: 40px
+      padding-bottom: 20px
+  &__text
+    // padding-top: 80px
+    // +r(1400)
+    //   padding-left: 60px
+    // +r(1040)
+    //   padding-left: 40px
+    // +r(767)
+    //   padding-top: 60px
+    //   padding-left: 0
     p
       font-size: 30px
       font-weight: 600
@@ -130,7 +144,7 @@
       +r(767)
         font-size: 16px
     &__stars
-      margin-bottom: 70px
+      // margin-bottom: 70px
       +r(767)
         margin-bottom: 50px
       a
@@ -138,6 +152,7 @@
         i
           color: #fff000
           font-size: 17px
+  &__list
     &__stages
       display: flex
       justify-content: space-between

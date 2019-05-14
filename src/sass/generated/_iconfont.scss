@@ -17,7 +17,8 @@ $icon-arrow-right: "\EA05";
 $icon-check: "\EA06";
 $icon-double-arrows: "\EA07";
 $icon-left-chevron: "\EA08";
-$icon-star: "\EA09";
+$icon-right-chevron: "\EA09";
+$icon-star: "\EA0A";
 
 
 %icon {
@@ -44,4 +45,5 @@ $icon-star: "\EA09";
 .icon-check:before { content: $icon-check; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
 .icon-left-chevron:before { content: $icon-left-chevron; }
+.icon-right-chevron:before { content: $icon-right-chevron; }
 .icon-star:before { content: $icon-star; }
