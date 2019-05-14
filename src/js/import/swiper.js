@@ -40,7 +40,12 @@ var swiper2 = new Swiper('.swiper-reviews', {
   spaceBetween: 0,
   loop: true,
   autoHeight: true,
-  autoplay: {
-    delay: 3000,
-  }
+  navigation: {
+    nextEl: '.swiper-reviews-next',
+    prevEl: '.swiper-reviews-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination-reviews',
+    clickable: true,
+  },
 });

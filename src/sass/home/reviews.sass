@@ -41,15 +41,63 @@
       +cover
       +r(767)
         background-position: 80% 0
+    .swiper-button-prev, .swiper-button-next
+      background: none
+      width: 55px
+      height: 55px
+      +r(1040)
+        width: 35px
+        height: 35px
+      +r(767)
+        display: none
+      i
+        font-size: 55px
+        color: $white
+        +r(1040)
+          font-size: 35px
+    .swiper-button-prev
+      left: 5%
+      +r(1500)
+        left: 1%
+      +r(1400)
+        left: 10px
+    .swiper-button-next
+      right: 5%
+      +r(1500)
+        right: 1%
+      +r(1400)
+        right: 10px
+  .swiper-pagination
+    bottom: 110px
+    +r(767)
+      bottom: 10px
+    &-bullet
+      width: 13px
+      height: 13px
+      opacity: 0.2
+      background: $white
+      &-active
+        opacity: 1
   h3
     font-size: 18px
     font-weight: bold
     color: #fdfdfd
-    margin-top: 105px
+    margin-top: 70px
+    +r(1400)
+      padding-left: 60px
+    +r(1040)
+      padding-left: 40px
+    +r(767)
+      padding-left: 0
   &__block
-    padding-top: 110px
+    padding-top: 80px
+    +r(1400)
+      padding-left: 60px
+    +r(1040)
+      padding-left: 40px
     +r(767)
       padding-top: 60px
+      padding-left: 0
     p
       font-size: 30px
       font-weight: 600
@@ -82,7 +130,7 @@
       +r(767)
         font-size: 16px
     &__stars
-      margin-bottom: 100px
+      margin-bottom: 70px
       +r(767)
         margin-bottom: 50px
       a
@@ -95,6 +143,7 @@
       justify-content: space-between
       +r(767)
         flex-direction: column
+        margin-bottom: 50px
       li
         border: solid 1px rgba($white, 0.4)
         border-bottom: none

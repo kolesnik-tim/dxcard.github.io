@@ -12,10 +12,12 @@
 $icon-android: "\EA01";
 $icon-apple: "\EA02";
 $icon-arrow-down: "\EA03";
-$icon-arrow-right: "\EA04";
-$icon-check: "\EA05";
-$icon-double-arrows: "\EA06";
-$icon-star: "\EA07";
+$icon-arrow-right-circle: "\EA04";
+$icon-arrow-right: "\EA05";
+$icon-check: "\EA06";
+$icon-double-arrows: "\EA07";
+$icon-left-chevron: "\EA08";
+$icon-star: "\EA09";
 
 
 %icon {
@@ -37,7 +39,9 @@ $icon-star: "\EA07";
 .icon-android:before { content: $icon-android; }
 .icon-apple:before { content: $icon-apple; }
 .icon-arrow-down:before { content: $icon-arrow-down; }
+.icon-arrow-right-circle:before { content: $icon-arrow-right-circle; }
 .icon-arrow-right:before { content: $icon-arrow-right; }
 .icon-check:before { content: $icon-check; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
+.icon-left-chevron:before { content: $icon-left-chevron; }
 .icon-star:before { content: $icon-star; }
