@@ -18,9 +18,13 @@ $icon-arrow_left-cicle: "\EA06";
 $icon-arrow_right-circle: "\EA07";
 $icon-check: "\EA08";
 $icon-double-arrows: "\EA09";
-$icon-left-chevron: "\EA0A";
-$icon-right-chevron: "\EA0B";
-$icon-star: "\EA0C";
+$icon-facebook: "\EA0A";
+$icon-left-chevron: "\EA0B";
+$icon-linkedin: "\EA0C";
+$icon-pinterest: "\EA0D";
+$icon-right-chevron: "\EA0E";
+$icon-star: "\EA0F";
+$icon-twitter: "\EA10";
 
 
 %icon {
@@ -48,6 +52,10 @@ $icon-star: "\EA0C";
 .icon-arrow_right-circle:before { content: $icon-arrow_right-circle; }
 .icon-check:before { content: $icon-check; }
 .icon-double-arrows:before { content: $icon-double-arrows; }
+.icon-facebook:before { content: $icon-facebook; }
 .icon-left-chevron:before { content: $icon-left-chevron; }
+.icon-linkedin:before { content: $icon-linkedin; }
+.icon-pinterest:before { content: $icon-pinterest; }
 .icon-right-chevron:before { content: $icon-right-chevron; }
 .icon-star:before { content: $icon-star; }
+.icon-twitter:before { content: $icon-twitter; }

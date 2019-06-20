@@ -6,7 +6,10 @@
   &__logo
     +center-y
     padding: 25px 0
+    padding-bottom: 55px
     position: relative
+    +r(1040)
+      padding-bottom: 30px
     +r(767)
       justify-content: center
     img
@@ -23,6 +26,19 @@
         font-size: 12px
         font-weight: normal
         display: block
+  &__social
+    +r(767)
+      display: flex
+      justify-content: center
+    a
+      margin-right: 20px
+      font-size: 30px
+      color: rgb(219, 223, 226)
+      &:hover
+        color: #ff0057
+      +r(767)
+        margin-right: 0
+        padding: 0 10px
   &__contacts
     padding: 25px 0 30px
     p
