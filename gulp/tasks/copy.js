@@ -33,9 +33,16 @@ gulp.task('copy:img', function () {
         ])
         .pipe(gulp.dest(config.dest.img));
 });
+gulp.task('copy:sitemap', function () {
+    return gulp
+        .src(config.src.templates + '/sitemap.xml')
+        .pipe(gulp.dest(config.dest.root));
+});
+
 
 gulp.task('copy', [
     'copy:img',
+    'copy:sitemap',
     // 'copy:rootfiles',
     // 'copy:lib',
     // 'copy:data',
